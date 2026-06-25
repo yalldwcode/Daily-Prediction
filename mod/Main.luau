@@ -156,13 +156,14 @@ geode.hook("geode.gd.MenuLayer:init/0", {
 
         sprite:setScale(0.9)
 
-        local button = geode.cocos2d.CCMenuItemSpriteExtra:create(
-            sprite,
-            nil,
-            function(_sender)
-                showPredictions()
-            end
-        )
+    local button = geode.cocos2d.CCMenuItemSpriteExtra:create(
+        sprite,
+        sprite,
+        sprite,
+        function(_sender)
+            showPredictions()
+    end
+)
 
         if not button then return result end
 
