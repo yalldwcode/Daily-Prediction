@@ -6,14 +6,14 @@
         "mac": "2.2081",
         "ios": "2.2081"
     },
-    "id": "yourname.dailyprediction",
+    "id": "yalldwcode.dailyprediction",
     "name": "Daily Prediction",
     "version": "v1.0.0",
-    "developer": "YourName",
+    "developer": "yalldwcode",
     "description": "Get 3 silly daily predictions about your GD session. New ones every day!",
     "dependencies": {
         "geode.node-ids": ">=v1.23.3",
-        "imes.luauapi": ">=0.1.0-beta.1"
+        "imes.luauapi": ">=0.1.0-beta.10"
     },
     "resources": {
         "files": [

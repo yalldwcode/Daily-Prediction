@@ -1,8 +1,3 @@
-/**
- * Daily Prediction — LuauAPI bootstrap.
- * All mod logic lives in mod/Main.luau.
- * Do not touch this file.
- */
 #include <Geode/Geode.hpp>
 #include <Geode/loader/ModEvent.hpp>
 #include <imes.luauapi/include/LuauAPI.hpp>
