@@ -127,7 +127,7 @@ local function showPredictions()
         .. "② " .. preds[2] .. "\n\n"
         .. "③ " .. preds[3]
 
-    FLAlertLayer.create("Daily Prediction", body, "ok"):show()
+    geode.gd.FLAlertLayer:create(nil, "Daily Prediction", body, "ok", nil, 360):show()
 end
 
 local function shouldShowToday(): boolean
@@ -156,12 +156,12 @@ geode.hook("geode.gd.MenuLayer:init/0", {
 
         sprite:setScale(0.9)
 
-        local button = CCMenuItemSpriteExtra.create(
+        local button = geode.cocos2d.CCMenuItemSpriteExtra:create(
             sprite,
-            self,
-            menu_selector(function(_self, _sender)
+            nil,
+            function(_sender)
                 showPredictions()
-            end)
+            end
         )
 
         if not button then return result end
